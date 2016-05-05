@@ -1,0 +1,162 @@
+\usepackage{fontspec}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{url}
+\usepackage{indentfirst}
+
+\linespread{1.5}
+\pagenumbering{roman}
+\addtolength{\parskip}{\baselineskip}
+\setlength{\parindent}{12pt}
+\setlength{\parskip}{1em}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+
+\titleformat*{\section}{\fontsize{16}{18}\bfseries}
+\titleformat*{\subsection}{\fontsize{14}{16}\bfseries}
+\titleformat*{\subsubsection}{\fontsize{12}{14}\bfseries}
+
+\bibliographystyle{IEEEtran}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{magenta},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{blue},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+
+\renewcommand{\title}[3] {
+	\begin{singlespace}
+	\begin{center}
+	{\bf \MakeUppercase {University of Waterloo}} \\
+	{\bf Software Engineering}
+
+	\vfill
+
+	{
+		\large
+		\textsc{\bf {#1}}
+	}
+
+	\vfill
+
+	#2
+
+	\vfill
+
+	#3
+
+	\end{center}
+	\end{singlespace}
+
+	\thispagestyle{empty}
+	\newpage
+}
+
+\newcommand{\letter}[9] {
+	\begin{singlespace}
+
+	#5
+
+	\noindent
+	April 11, 2014
+
+	\noindent
+	Andrew Morton, Director\\
+	Software Engineering Program\\
+	University of Waterloo\\
+	200 University Ave. West\\
+	Waterloo, Ontario. N2L 3G1
+
+
+	\noindent
+	Dear Professor Morton:\\
+
+	The enclosed report, \textit{#1}, is the #2 work report that I have written. The information presented in the report is based upon my recently completed #3 work term with #4.\\
+
+	#6\\
+
+	#7\\
+
+	#8 I hereby confirm that I have received no help, other than what is mentioned above, in writing this report. I also confirm this report has not been previously submitted for academic credit at this or any other academic institution.
+
+	\vfill
+
+	\noindent
+	Sincerely,\\
+
+	\vfill
+
+	\noindent
+	#9\\
+
+	\end{singlespace}
+
+	\thispagestyle{empty}
+	\newpage
+}
+
+\newcommand{\tocsection}[1]{ 
+	\section*{#1}
+	\addcontentsline{toc}{section}{#1}
+}
+
+\renewcommand{\contentsname}{\begin{center}Table of Contents\end{center}}
+\newcommand{\toc} {
+	\tableofcontents
+	\addcontentsline{toc}{section}{Table of Contents}
+	\cleardoublepage
+}
+
+\renewcommand{\listfigurename}{\begin{center}List of Figures\end{center}}
+\newcommand{\lof} {
+	\listoffigures
+	\addcontentsline{toc}{section}{List of Figures}
+	\newpage
+}
+
+\renewcommand{\listtablename}{\begin{center}List of Tables\end{center}}
+\newcommand{\lot} {
+	\listoftables
+	\addcontentsline{toc}{section}{List of Tables}
+	\newpage
+}
+
+\renewcommand{\refname}{References}
+
+\renewcommand{\appendix}[2]{
+	\setcounter{page}{1}
+	\renewcommand{\thepage}{A-#1.\arabic{page}}
+	\section*{Appendix #1 \- #2}
+	\addcontentsline{toc}{section}{#2}
+}
+
+\renewcommand{\cftsecleader}{\bfseries\cftdotfill{\cftdotsep}}
+
+\renewcommand{\cftfigpresnum}{Figure }
+\renewcommand{\cftfignumwidth}{55pt}
+\renewcommand{\cftfigaftersnum}{: }
+
+\renewcommand{\cfttabpresnum}{Table }
+\renewcommand{\cfttabnumwidth}{50pt}
+\renewcommand{\cfttabaftersnum}{: }
+

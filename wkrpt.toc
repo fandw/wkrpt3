@@ -1,0 +1,21 @@
+\contentsline {section}{Executive Summary}{iii}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Problem Specification}{3}
+\contentsline {subsection}{\numberline {2.1}Background}{3}
+\contentsline {subsection}{\numberline {2.2}Options}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Manual testing from User Interface}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Simple Object Accessing Protocol (SOAP)}{4}
+\contentsline {subsubsection}{\numberline {2.2.3}Unit Testing}{5}
+\contentsline {section}{\numberline {3}Comparison}{7}
+\contentsline {subsection}{\numberline {3.1}Time}{7}
+\contentsline {subsection}{\numberline {3.2}Automation}{8}
+\contentsline {subsection}{\numberline {3.3}Reproduction}{10}
+\contentsline {subsection}{\numberline {3.4}Productivity}{11}
+\contentsline {section}{\numberline {4}Evaluation}{13}
+\contentsline {section}{\numberline {5}Conclusions}{14}
+\contentsline {section}{\numberline {6}Recommendations}{15}
+\contentsline {section}{References}{16}
+\contentsline {section}{Acknowledgements}{17}
+\contentsline {section}{Sample WSDL file}{A-A.1}
+\contentsline {section}{Simple.java}{A-B.1}
+\contentsline {section}{SimpleTest.java}{A-C.1}
