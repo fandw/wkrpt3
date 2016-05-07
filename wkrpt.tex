@@ -3,10 +3,10 @@
 \begin{document}
 
 
-\title{Analysis of Web Application Functional Testing Options}
+\title{Evaluation of Synchronous and Asynchronous Programming techniques in Ecommerce Application}
 {
-	Telus Health Inc.\\
-	Mississauga, ON L4W 4T9
+	Minted LLC.\\
+	San Francisco, CA 94111
 }
 {
 	\textbf{Prepared by}\\[2ex]
@@ -14,12 +14,12 @@
 	Daiwei Fan\\
 	Student ID: 20458752\\
 	User ID: d3fan\\
-	2A Software Engineering\\
-	April 11, 2014
+	4A Software Engineering\\
+	May 1, 2016
 }
 
 
-\letter{Analysis of Web Application Functional Testing Options}{first}{2A}{Telus Health Inc.}
+\letter{Evaluation of Synchronous and Asynchronous Programming techniques in Ecommerce Application}{third}{3B}{Minted LLC.}
 {
 	\noindent
 	Daiwei Fan\\
@@ -28,13 +28,13 @@
 	N2T 2N8
 }
 {
-	Telus Health provides health and related transaction record for clients of medical insurance companies. I was situated in the new VIP room team, which is responsible for rebuilding a web service for clients to look up their drug claim transaction history. During my time in Telus, I was assigned to study the pre-existing interface and to extract data from existing log files.
+	Minted is a ecommerce platform that sells customizable arts and designs. Their main product include wedding invitations, digital invitations, uniquely designed stationary items etc. I decided to write this report based on the various concurrent programming techniques used in Minted's ecommerce funnel.
 }
 {
-	The following report performs an analysis on the different techniques for testing features implemented in VIP room. This problem is one that I encountered during my work term. My team had to decide which method was best suited to the task given all the requirements and our abilities.
+	The following report performs an evaluation on the use of synchronous and asynchronous techique used in different phases of the ecommerce funnel. The correct usage of technique is the interest of many parties in the company. My report will be used as a minor suggestion to the engineering team who makes the final decision of code refactoring.
 }
 {
-	I would like to thank my manager Kevin Ho and Quality Analyst Anshuman Ghandi, both of whom gave inputs on how functionality testing is done in other projects produced by Telus Health.
+	I would like to thank my mentor Linus Mixson, co-worker James Wu and devops engineer Patrick Gilbert, all of whom provided valuable background knowledge and priceless guidance over the course of my internship.
 }
 {
 	Daiwei Fan\\
@@ -44,15 +44,7 @@
 
 
 \tocsection{Executive Summary}
-Telus Inc., a leading Electronic Medical Record (EMR) provider in Canada, is designing VIP room, a drug claim searching web application for patients and insurers. A major step in the designing phase involves a 
-decision of choosing an approach/method to test the application. This report provides a comparison of three 
-alternatives, UI testing, SOAP testing and JUnit testing, assessing their suitability to the application.\\
 
-This report analyses the three approaches/methods against four criteria: Time, Automation, Reproduction and Productivity. A decision matrix is used to determine the most suitable approach/method.\\
-
-The three methods/approaches excel in different criteria. UI testing performs well in Time, SOAP leads in Reproduction and JUnit holds the standard for Productivity. UI testing is not successful in Automation while SOAP and JUnit performs equally well in the most important aspect of functional testing.\\
-
-Ultimately, the decision matrix indicates that JUnit is the most suitable solution. However, the close score from SOAP affected the decision making. It is finally determined that both JUnit and SOAP will be used to test VIP room to compensate the shortcoming of both methods/approaches. This report recommends that the SOAP test cases to be carefully labelled and grouped in order for quality analysts to share and JUnit test case modifications to be severely managed by version control to avoid mass build failures.\\
 
 
 
