@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2}Problem Specification}{3}
 \contentsline {subsection}{\numberline {2.1}Background}{3}
 \contentsline {subsection}{\numberline {2.2}Options}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}Manual testing from User Interface}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Manual testing from User Interface}{4}
 \contentsline {subsubsection}{\numberline {2.2.2}Simple Object Accessing Protocol (SOAP)}{4}
 \contentsline {subsubsection}{\numberline {2.2.3}Unit Testing}{5}
 \contentsline {section}{\numberline {3}Comparison}{7}

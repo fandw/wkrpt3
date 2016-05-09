@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.5.7)  9 MAY 2016 04:40
+This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.5.7)  9 MAY 2016 16:14
  restricted \write18 enabled.
 **wkrpt.tex
 (./wkrpt.tex
@@ -179,7 +179,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.258 seconds)
+luaotfload | main : initialization completed in 0.260 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count115
 \l_fontspec_language_int=\count116
@@ -776,6 +776,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
  []
 
 
+Overfull \hbox (7.25261pt too wide) in paragraph at lines 43--43
+[][]\EU2/TimesNewRoman(0)/m/n/12 The fol-low-ing re-port per-forms an anal-y-si
+s on the use of syn-chronous and asyn-chronous techique
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
  []
@@ -843,168 +849,166 @@ er.jpg, id=31, 455.7025pt x 341.275pt>
 File: img/three_tier.jpg Graphic file (type jpg)
 
 <use img/three_tier.jpg>
-Package pdftex.def Info: img/three_tier.jpg used on input line 87.
+Package pdftex.def Info: img/three_tier.jpg used on input line 86.
 (pdftex.def)             Requested size: 341.44226pt x 255.70566pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 <img/ui.jpg, id=32, 146.04562pt x 94.85437pt>
 File: img/ui.jpg Graphic file (type jpg)
  <use img/ui.jpg>
-Package pdftex.def Info: img/ui.jpg used on input line 100.
+Package pdftex.def Info: img/ui.jpg used on input line 99.
 (pdftex.def)             Requested size: 142.27689pt x 92.40663pt.
  [3<./img/three_tier.jpg>] <img/soapui.jpg, id=36, 510.40688pt x 261.22594pt>
 File: img/soapui.jpg Graphic file (type jpg)
 
 <use img/soapui.jpg>
-Package pdftex.def Info: img/soapui.jpg used on input line 110.
+Package pdftex.def Info: img/soapui.jpg used on input line 109.
 (pdftex.def)             Requested size: 426.81517pt x 218.44374pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-[4<./img/ui.jpg><./img/soapui.jpg>]
 luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 117.
-
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 116.
 
 ("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2lmtt.fd"
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
-otf/lmmono10-regular.luc)
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+otf/lmmono10-regular.luc) [4<./img/ui.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+[5<./img/soapui.jpg>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 <img/timeTable.jpg, id=48, 216.05719pt x 229.60782pt>
 File: img/timeTable.jpg Graphic file (type jpg)
  <use img/timeTable.jpg>
-Package pdftex.def Info: img/timeTable.jpg used on input line 158.
+Package pdftex.def Info: img/timeTable.jpg used on input line 157.
 (pdftex.def)             Requested size: 160.64795pt x 170.72343pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 <img/timeGraph.jpg, id=49, 227.34938pt x 154.32657pt>
 File: img/timeGraph.jpg Graphic file (type jpg)
  <use img/timeGraph.jpg>
-Package pdftex.def Info: img/timeGraph.jpg used on input line 168.
+Package pdftex.def Info: img/timeGraph.jpg used on input line 167.
 (pdftex.def)             Requested size: 256.07962pt x 173.82887pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 [8<./img/timeTable.jpg><./img/timeGraph.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 <img/soapAuto.jpg, id=56, 444.15938pt x 344.78813pt>
 File: img/soapAuto.jpg Graphic file (type jpg)
  <use img/soapAuto.jpg>
-Package pdftex.def Info: img/soapAuto.jpg used on input line 185.
+Package pdftex.def Info: img/soapAuto.jpg used on input line 184.
 (pdftex.def)             Requested size: 341.43446pt x 265.04575pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 [9<./img/soapAuto.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
 [11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [15]
 No file wkrpt.bbl.
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 [][]\EU2/TimesNewRoman(0)/m/n/12 W3C Note, ”Sim-ple Ob-ject Ac-cess Pro-to-co
 l (SOAP) 1.1,” W3C Note,
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 246--247
+Underfull \hbox (badness 2698) in paragraph at lines 245--246
 [][]\EU2/TimesNewRoman(0)/m/n/12 Mi-crosoft Corp., ”Unit Test-ing,” MSDN - 
 Mi-crosoft, \EU2/TimesNewRoman(0)/m/it/12 http://msdn.mi-crosoft.com/en-
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 [17] <img/wsdl.jpg, id=85, 754.31813pt x 712.91344pt>
 File: img/wsdl.jpg Graphic file (type jpg)
  <use img/wsdl.jpg>
-Package pdftex.def Info: img/wsdl.jpg used on input line 264.
+Package pdftex.def Info: img/wsdl.jpg used on input line 263.
 (pdftex.def)             Requested size: 512.14688pt x 484.035pt.
 
-Overfull \hbox (56.84676pt too wide) in paragraph at lines 264--265
+Overfull \hbox (56.84676pt too wide) in paragraph at lines 263--264
  [][][] 
  []
 
@@ -1019,14 +1023,14 @@ Here is how much of LuaTeX's memory you used:
  100000,460012 words of node,token memory allocated
  444 words of node memory still in use:
     nodes
-   avail lists: 2:1527,3:109,4:997,5:909,6:2588,7:523,8:2,9:1663,10:206
+   avail lists: 2:1527,3:109,4:997,5:909,6:2588,7:523,8:2,9:1663,10:205
  20907 multiletter control sequences out of 65536+200000
  49 fonts using 13086095 bytes
- 55i,8n,64p,1440b,598s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,64p,1440b,600s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><C:/W
 INDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.tt
 f>
-Output written on wkrpt.pdf (26 pages, 1609409 bytes).
+Output written on wkrpt.pdf (26 pages, 1609644 bytes).
 
 PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
