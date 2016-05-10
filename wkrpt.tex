@@ -3,7 +3,7 @@
 \begin{document}
 
 
-\title{Analysis of Synchronous and Asynchronous Programming techniques in Ecommerce Application}
+\title{Analysis of Asynchronous Programming techniques in Ecommerce Application}
 {
 	Minted LLC.\\
 	San Francisco, CA 94111
@@ -19,7 +19,7 @@
 }
 
 
-\letter{Analysis of Synchronous and Asynchronous Programming techniques in Ecommerce Application}{third}{3B}{Minted LLC.}
+\letter{Analysis of Asynchronous Programming techniques in Ecommerce Application}{third}{3B}{Minted LLC.}
 {
 	\noindent
 	Daiwei Fan\\
@@ -31,7 +31,7 @@
 	Minted is a ecommerce platform that sells customizable arts and designs. Their main product include wedding invitations, digital invitations, uniquely designed stationary items etc. I decided to write this report based on the various concurrent programming techniques used in Minted's ecommerce funnel.
 }
 {
-	The following report performs an analysis on the use of synchronous and asynchronous techique used in different phases of the ecommerce funnel. The correct usage of technique is the interest of many parties in the company. My report will be used as a minor suggestion to the engineering team who makes the final decision of code refactoring.
+	The following report performs an analysis on the use of asynchronous techniques in different phases of the ecommerce funnel. The correct usage of technique is the interest of many parties in the company. My report will be used as a minor suggestion to the engineering team who makes the final decision of code refactoring.
 }
 {
 	I would like to thank my mentor Linus Mixson, co-worker James Wu and devops engineer Patrick Gilbert, all of whom provided valuable background knowledge and priceless guidance over the course of my internship.
@@ -45,7 +45,11 @@
 
 \tocsection{Executive Summary}
 
+The following report performs an analysis on the use of asynchronous techniques in different phases of the ecommerce funnel. Four examples will be given. For each example, the report will discuss in detail regarding the reasoning behind using the current asynchronous technique; the kind of technology used and the way the technology is used; and finally the overall efficiency of the implementation.\\
 
+The four examples are: Email generator, email sending server, order fulfilment server and batch promo code generation tool. Background knowledge will first be provided regarding the four examples. Then each example will be discussed in detail based on the three criteria above.\\
+
+At the end the conclusion will be drawn and recommendations are made. The conclusion roughly states that the use of the technologies are adequate but the choice of technologies could be improved in the future. Suggestions of improvement will be given in the recommendation section.\\
 
 
 \newpage
@@ -54,23 +58,22 @@
 \newpage
 \listoffigures
 \newpage
-\listoftables
-\newpage
 
 
 \pagenumbering{arabic}
 \section{Introduction}
 
-Minted is an online marketplace of independent artists and designers. "The company crowdsources art and graphic design through monthly challenges. The public votes for the winning entries, and Minted produces the winning work as stationery, wall art, and decor."\cite{telusComp}. "In October 2014, Minted was named \#5 on LinkedIn's 10 Bay Area startups that are most in demand by local techies."\cite{telusComp} In January 2016， I was assigned to the infrastructure team which oversees the high level engineering design of Minted's ecommerce funnel. In this funnel, there are several levels of interfaces that interacts with the user to customize their product and finally make the order. Over the course of my internship, I began to gain interest in the programming techniques used in this funnel. To ensure smooth and intuitive shopping experience, the use of synchronous and asynchronous programming should be carefully applied.\\
-
-Nowadays asynchronous programming has become more and more popular. The benefit of concurrency it brings has increased the efficiency of millions of software. One of the reasons is that computer hardware has been built to perform concurrent tasks for more than a decades now, but on the software side it has only become widely popular in recent years. As a result, support for asynchronous programming are more often added to new technologies. Namely Python 3.x has a very powerful tool set for it. At Minted, different approaches have been used to implement asynchronous features. For example, for sending email campaigns to registered customers, generated emails are batched and a request is sent to a jobs client and queued. When it is the batch's turn to be processed, the jobs client will send the emails and makes a call back to a email campaign listener to acknowledge the success of sending the batch of emails.\\
+Minted is an online marketplace of independent artists and designers. "The company crowdsources art and graphic design through monthly challenges. The public votes for the winning entries, and Minted produces the winning work as stationery, wall art, and decor."\cite{mintedllc}. "In October 2014, Minted was named \#5 on LinkedIn's 10 Bay Area startups that are most in demand by local techies."\cite{mintedllc} In January 2016, I was assigned to the infrastructure team which oversees the high level engineering design of Minted's ecommerce funnel. In this funnel, there are several levels of interfaces that interacts with the user to customize their product and finally make the order. Over the course of my internship, I began to gain interest in the programming techniques used in this funnel. To ensure smooth and intuitive shopping experience, the use of asynchronous programming should be carefully applied.\\
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=12.5cm,height=12.5cm,keepaspectratio]{img/agile.png}
-\caption{Agile development workflow}
+\includegraphics[width=12.5cm,height=12.5cm,keepaspectratio]{img/async.jpg}
+\caption{Sync vs. Asynchronous programming}
 \label{overflow}
 \end{figure}
+
+Nowadays asynchronous programming has become more and more popular. The benefit of concurrency it brings has increased the efficiency of millions of software. One of the reasons is that computer hardware has been built to perform concurrent tasks for more than a decades now, but on the software side it has only become widely popular in recent years. As a result, support for asynchronous programming are more often added to new technologies. Namely Python 3.x has a very powerful tool set for it. At Minted, different approaches have been used to implement asynchronous features. For example, for sending email campaigns to registered customers, generated emails are batched and a request is sent to a jobs client and queued. When it is the batch's turn to be processed, the jobs client will send the emails and makes a call back to a email campaign listener to acknowledge the success of sending the batch of emails.\\
+
 
 This report provides an analysis of the use of asynchronous techniques in different places of the ecommerce funnel. For each use case, I will explain the purpose of applying the technique, the kind of technique applied, the way it is applied and comments of whether the application is efficient. Finally, the report summarizes the results of the analysis, draws conclusions, and makes a recommendation. The reader is expected to have reasonable background in web service development. Basic knowledge in python is a plus. Other technology and terminologies used in this report will be explained on their first appearance.\\
 
@@ -83,8 +86,8 @@ This report provides an analysis of the use of asynchronous techniques in differ
 Ecommerce funnel is a term used to describe the process of converting an anonymous person to a paid customer. The process consists of several steps including advertising/email campaign, site navigation/product selection, product customization, order placement and finally order processing. Following is an illustration of the ecommerce funnel.\\
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=12cm,height=12cm,keepaspectratio]{img/three_tier.jpg}
-\caption{three-tier web service sequence diagram}
+\includegraphics[width=12.5cm,height=12.5cm,keepaspectratio]{img/funnel.png}
+\caption{Ecommerce funnel}
 \label{overflow}
 \end{figure}
 
@@ -96,30 +99,10 @@ Minted sends automated emails to users periodically for advertising purposes. Th
 		
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=5cm,height=5cm,keepaspectratio]{img/ui.jpg}
-\caption{input from simple UI}
+\includegraphics[width=5cm,height=5cm,keepaspectratio]{img/email-marketing.jpg}
+\caption{Email marketing}
 \label{overflow}
 \end{figure}
-
-\subsubsection{Product customization}
-At Minted, customers are given a lot of flexibility to customize their items. The process of customization is called "CU3", where "CU" stands for customization and "3" stands for the 3 generalized categories: "Front", "Back" and "Envolope" since most products sold at Minted are some sort of printed arts, most commonly an invitation card.\\
-	
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=15cm,height=15cm,keepaspectratio]{img/soapui.jpg}
-\caption{SoapUI request/response}
-\label{overflow}
-\end{figure}
-
-\begin{lstlisting}
-// Simple.java
-public class Simple {
-	public int add(int a, int b, int c){
-		return a + b + c;
-	}
-}
-
-\end{lstlisting}
 
 \subsubsection{Order placement and processing}
 This is the phase where the user has finished customizing their items and are ready to checkout. The typical step is to enter the billing and shipping address along with a valid credit card credential. Due to security commitements, Minted will not be saving the credit card information. Instead a third party credit card authentication service called "Cybersource" is used.\\
@@ -129,90 +112,67 @@ As previously mentioned, Minted often sends user exclusive coupons via emails. T
 \newpage
 
 \section{Analysis}
-There are several aspects of an application of a programming technique that need to be analyzed to judge if the technique is well applied. First of all the reasoning behind applying such technique. Secondly the kind of technology used and the way it is applied. Lastly the efficiency of the application compared to other alternatives.\\
-\subsection{Time}
-This subsection measures the average amount of time to run one single test. All three approaches will use the exact same inputs. The data used will be typical for VIP room clients. Due to confidentiality and copyright, the input data can only be briefly described as:  It contains six mandatory fields and seven optional fields. Three of the mandatory fields are numerical fields and the rest are alphabetical. All seven optional fields are alphabetical fields.\\
+There are several aspects of an application of a programming technique that need to be analysed to judge if the technique is well applied. First of all the reasoning behind applying such technique. Secondly the kind of technology used and the way it is applied. Lastly the efficiency of the application compared to other alternatives.\\
+\subsection{Email Campaign}
 
-Five sets of input was selected with each taking notably different amount of time when tested. Each set is tested three times on each approach to increase precision and the result is shown in Figure 5 (All values take the unit of a millisecond):\\
+\subsubsection{Email Generator}
+As briefly explained in the introduction, the way Minted sets up email campaign is by implementing a cron job that acts as an email generator. A cron job is a time-based job scheduler in Unix-like computer operating systems. People who set up and maintain software environments use cron to schedule jobs (commands or shell scripts) to run periodically at fixed times, dates, or intervals.\cite{cron} At Minted the generator is scheduled to run at the 30th minute of every hour. The reasoning behind using a cron job is very simple: the activation of the generator should be automated and it should run independent from the main web application. Obviously, having a sales employee trigger an email generation is silly since the rule to generate a single email for a single user can be pre-defined. For example, if Minted wants to send a shipping promotion to a user who has an item in his cart for longer than two days, than this rule could be normalized and coded into the email generator. The generator would thus filter the qualifying customers based on this logic. In addition, an email campaign is meant to be an advertisement that is sent to the user when his/she is not on the site. So it should be run in parallel along with the website.\\
 
+In terms of the type of technology picked for the generator. Cron jobs are one of the most effective way of scheduling periodic tasks. Since it is built directly into any Unix machine, minimal setup work is required for virtually any types of server the company might be using. This is valuable when it comes to saving engineering and development operation costs.\\
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=6cm,height=6cm,keepaspectratio]{img/timeTable.jpg}
-\caption{Time taken by different approaches}
-\label{overflow}
-\end{figure}
+Finally, the goal of parallel processing is achieved effectively. Currently Minted has roughly ten email generator instances running in parallel, each instance is created for a different campaign. Moreover, these generators will not block any process of the main web service which really showcases the beauty of asynchronous programming.\\
 
-
-Figure 6 illustrates the average time taken every test case:\\
+\subsubsection{Email Server}
+Running a cron job to generate emails is only one of the two levels of asynchrony for email campaign. The generators are not responsible for sending the emails. Instead, they are batched and a request is sent to an email server. The batch of emails will be queued on the server and processed when the server is free. It is not difficult to comprehend the reason Minted wants an email server. Sending an actual email can take quite some time, the SMTP (Simple Mail Transfer Protocol) used to send emails is an old piece of technology. One of its greatest flaws is that it does not have a timeout restriction, so if a timeout is not set on the mail server, the connection could be hanging on a network problem and incoming emails can be indefinitely delayed. Even if a timeout is set, for example, Apache uses 60 seconds for the timeout, Microsoft uses 100 seconds,\cite{unit} \cite{maven} it can take quiet a while to send (or indicate a failure to send) a batch of 1000 emails should there be a network problem. As said in the previous section, an email generator for each campaign is set to run once every hour. But if by the next hour the previous generator for the campaign still has not terminated, two instances of the same campaign could be running at the same time. This could potentially cause unsent emails or duplicated emails. Queuing all the emails on a server can solve this problem elegantly.\\
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=9cm,height=9cm,keepaspectratio]{img/timeGraph.jpg}
-\caption{Time taken by test cases}
+\includegraphics[width=12cm,height=10cm,keepaspectratio]{img/responsys.jpg}
+\caption{Responsys interface}
 \label{overflow}
 \end{figure}
 
-The graph shows that all three approaches finish all test cases in the same time frame with SOAP taking the longest and JUnit taking the least. This result is reasonable since the amount of time that runtime execution takes is dominant in the values displayed on the graph. At the mean time, the SOAP protocol wraps input data in an envelope when sending and checks the output with assertions and validations. This can explain the fact that it is taking longer than the others. Please note that this subsection does not measure the amount of time for quality analysts to enter the data when using the three approaches. This justified in the next two subsections. \\
+The reason Minted is picking a third party mail server is because building your own email server to achieve asynchronous mail delivering can be very costly. Responsys is an experienced and robust service that Minted has been using for 5 years. From the logs on the Responsys server, Responsys has a roughly 98\% success rate in sending emails. The sample is all the campaign emails sent through Responsys from the week of Apr. 11th, 2016. On the other hand, there is the minor problem that a mail server does not guarantee the quickness of sending an email. In the case of a network problem where there is a large number of emails being queued on the server, an email can be delayed for as much as several hours. After studying the business requirements, I believe that email campaigns are relatively less time sensitive. A rare case of long email delay can be tolerated and is one of the least concerns for a sales person.\\
 
 
-\subsection{Automation}
-Automation is the most popular topic among quality analysts who seek to improve their testing. Testing automation is a technique that boosts efficiency and reduces human labour. A large number of test cases are controlled by the system and run against the web application automatically when a test command is generated by the tester or when the application is built.\\
-
-The first approach is the least automation friendly approach, considering that data is entered from the UI. Although it is possible using a language such as Python, this is not encouraged or practically viable. The reason is that VIP room is an enterprise web application with thousands of customers. The security layer that wraps the application redundantly checks if the data is entered by some artificial intelligence to prevent brute force security penetration. Therefore automated testing is not feasible for this approach.\\
-
-The possibility for automated SOAP testing solely depends on the software used. Some light weight SOAP software (or web client) does not have automation features. However in SoapUI, test cases are managed to be automation ready. It means that test cases are grouped and named so a particular group of cases can be extracted and run against the application instantly. The group and number of cases are controlled by the tester.
+\subsection{Order Placement}
+Asynchronous processing has become the industry standard for ecommerce. When you buy something from online retailers, upon submitting your order, the website is most likely going to tell you that your order is submitted or completed, but it would not tell you that it is being processed. In this case, some kind of asynchronous processing has to be in place otherwise your web page would be hanging for hours until your order is processed. In short, the very nature of order fulfilment demands asynchronous programming application. The reasoning behind this is that a lot of things has to be done between the order placement and order shipment. And this part cannot be dealt with by adopting third party software since it contains too much business logic and Minted special services.\\
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=12cm,height=12cm,keepaspectratio]{img/soapAuto.jpg}
-\caption{SoapUI automation feature}
+\includegraphics[width=15cm,height=20cm,keepaspectratio]{img/order.png}
+\caption{Minted order confirmation page}
 \label{overflow}
 \end{figure}
 
-The window above is SoapUI's interface for automation testing. Although it does save the tester a lot of time and reduce the chance for mistakes, it is still not completely automated in the sense that it still needs to be configured and launched manually every time. True automation requires no human efforts after the initial test case configuration.\\
+At Minted, the biggest challenge to shrink the time of fulfilment is to address users special requests. Minted allows users to leave verbal instructions if the customization tool we provide is not powerful enough for the users. To tackle this challenge, Minted has implemented a fulfilment server that manages all submitted orders. Submitted orders are queued on the server similar to a batch of emails. These orders will first be verified with the third party credit card authentication service "Cybersource", to verify that payments have been received. Then, the orders are dispatched to the fulfilment crew to complete any special instructions. \\
 
-One of the advantages JUnit has is that it is integrated in the Maven build process. “Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.”\cite{maven} The VIP room web application uses Maven as its build manager. Every time a complete build (tests can be skipped to save build time) is done, the JUnit test cases are automatically run against the application. should any test fail, detail error message will be displayed in the console and the build will be marked as unsuccessful. As previously explained, JUnit “tests the smallest piece of testable software in the application.”\cite{unit} This means that JUnit test cases are likely to be static as shown by the code block on page 6. This seems to defeat the definition of functional testing, which should cover all permutation of scenario. However in software engineering, there are techniques to prove that if all single blocks are performing correctly, the entire application will work in the right way. On the other hand, there are ways connect JUnit test cases to implement a functional test case. A test controller is needed to wrap the cases to form a dynamic test. With the modified version of Simple.java and SimpleTest.java listed in the appendix, functional testing can be achieved.\\
-
-
-\subsection{Reproduction}
-A good testing method should have easily maintained test cases as well as simple reproduction procedure. This subsection is going to assess the easiness for an approach to save and transfer test cases between software and computers.\\
-
-This is a criterion that causes the first approach to disqualify as a viable solution for VIP room testing. Entering data from UI cannot be recorded or saved for easy reproduction. This is why many considers this approach as a casual and informal way to do functional testing. On the other hand, both SOAP and JUnit are quite competitive in this category. SoapUI exports its test projects, which contain test suites and cases, into XML files. These XML files can be read by many other SOAP clients such as SoapSonar to import the projects. Finally, JUnit test cases are merely java files which can be transferred between testers. JUnit does fall behind in terms of compatibility. Since the test cases are so closely written to the java files that build the web application, transferring test cases can cause version control conflict and dilemma.\\
-
-The analysis from section 3.2 and 3.3 have justified that the average time for the tester to enter data cannot be taken into account directly. The lack of automation and reproduction for approach one makes the testers who use that method spending much more time entering data than those who choose the other two approaches.
+Currently, there are noticeable flaws in the fulfilment server. It is common to see a large number of submitted orders queued on the server once or twice in a month. These are likely caused by existing bugs and extensive special instruction fulfilments. However, Minted is trying its best optimizing the server so that delay caused by non-human factors can be reduced to a minimum.\\
 
 
-\subsection{Productivity}
-This last subsection analyses how much does each approach help the tester to find defects in the code and communicate the defect to developers. This is the part that JUnit takes the leading position. Due to its deeply integrated nature, JUnit is able to detect run-time errors and unexpected outputs instantly. Moreover, the built-in error messaging and logging feature displays and saves the error neatly for developers or future testers to refer to.\\
-SOAP testing does not quite have the same power as JUnit in this category. Although it is able to detect and log unexpected output through assertions, all run-time error messages are completely out of its control. Instead they depend on how the web application itself handles these errors. Most of the time a registered error message will be displayed on the SOAP client and testers will have to refer to the application's design document to find more detail in order to pin point what went wrong. Finally, the first approach has the least amount of control over these errors since not even assertions can be implemented. The tester will have to have the expected output on paper in order to determine if the output is legitimate.\\
-\newpage
-\section{Evaluation}
-A decision matrix will be used to determine which approach is the most suitable for VIP room. 100 points will be distributed to the four criteria analysed above and the points each criterion gets will be then distributed to the three testing methods. Among the four criteria, the order of impact on efficiency is Automation (40) > Reproduction (20) = Productivity (20) > Time (15). Based on the analysis above, the final distribution is:
+\subsection{Promo Code Generator}
+As previously mentioned, I have created an internal tool for the sales crew to create large number of promo codes in a batch. One of the biggest challenge was to implement asynchrony to the tool. There are two reasons that asynchrony is necessary for this tool. The first one is that a user can be asking for a million promo codes. For every single code created, the tool will populate basic information about the code, for example, the promo code string and its id. Then, the tool will both write the information to database and to a CSV file for the user to download. This can take quite a bit of time if max write per second limit is taken into consideration (this maximum is used to protect the integrity of the hardware). Therefore the tool cannot be just waiting endlessly for the tool to finish. Secondly, the generated CSV is very large in size (roughly 5G for a million promo codes). The file is just not practical for any type of synchronous displaying methods, whether it's sending all the promo codes through an email or display all the codes on the tool's page.\\
 
-\begin{table}[h]\centering
-\caption{Decision Matrix}
-\label{dm}
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-      & Time & Automation & Reproduction & Productivity & Total \\ \hline
-UI    & 5    & 0          & 0            & 2            & 7     \\ \hline
-SOAP  & 5    & 20         & 11           & 6            & 42    \\ \hline
-JUnit & 5    & 20         & 9            & 12           & 46    \\ \hline
-\end{tabular}
-\end{table}
+I found that the asynchronous programming support for python 3 is perfect for this kind of task. Unfourtunately, after some consultation with engineers at Minted I found that python 3 was not currently supported and the cost would be impractical to support it along with python 3, not mentioning this is just for a small internal tool. Thus I was forced to use a cron job to implement the tool. The solution combines previously considered alternatives. After the user submits a promo generation request, the request will be queued as a database table entry. When the cron job is activated, the job will read through the table to find queued requests. The job will then create the promo codes and upload the generated CSV file to S3 server (an Amazon cloud based server). An email with the download link will be sent to the user to requested the codes.\\
+
+Although it is foreseeable that this will be less efficient than the python 3 solution, this approach is still sufficient for the need of the sales crew. And through some rigorous testing the tool has proved its robustness and reliability.\\
+
 
 \newpage
 \section{Conclusions}
-The decision matrix indicates that the first approach trails in almost every category while the other two competes for only a couple of points to take the lead. All three methods perform relatively similar in Time since the runtime execution time takes most part of the time measured. SOAP and JUnit splits the forty points in Automation how powerful both methods are in this category. SOAP does have a slight edge over JUnit in maintaining and reproducing because the deeply integrated nature of JUnit is losing itself points in version controlling.  However the latter was able to dominate in productivity with its great emphasis on small unit code quality which help it to secure the final lead against SOAP.\\
+In conclusion, the use of asynchronous programming techniques in the above four places are overall reasonable. Especially for the fulfilment server, it is unrealistic to implement a synchronous service for order placement. Although this analysis lacks some quantitative evidence to prove the reasons are adequate, my conclusions have been agreed by several engineers at Minted. Especially for the batch promo generator, my work has been commended by many in the company.\\
 
-Although the decision is usually used to determine the best solution to a problem, it is important to notice that a quantitative value is produced as the final result. These values also shows how close each solution is with the others in terms of suitability. In this case, JUnit only beats SOAP by 4 points. This suggests that SOAP is not too bad of a solution for VIP room's testing. In fact, due to the substantially large difference in the two approaches' mechanics, it is most appropriate to use both methods at the same time. This thus can not only complement the disadvantage of both methods, but also creates redundancy to reduce the room for human error in testing.\\
+The kind of technology used and the way they are used are adequate. The efficiency of the implementation isn't ideal but they are generally acceptable. For email generator, the goal of parallel processing is achieved effectively. The email server also has a satisfactory success rate. The fulfilment server still needs some improvements. And finally the batch promo generator is considered as robust and reliable. In other words, the use of the technologies are adequate but the choice of technologies could be improved in the future.\\
 
 \newpage
 \section{Recommendations}
-Based on the analysis of the three different approaches to functional testing for VIP room, this report recommends both SOAP and JUnit testing to be used as a duo testing system. This compensates both the lack of control SOAP has over the individual functions and methods and the lack of thoroughness when using JUnit. Human errors can also be kept at minimum when this redundant testing technique is present.\\
+For the Responsys mail server, a callback can be implemented from Responsys to a Minted email service listener to indicate that a particular email is sent. This will put Minted in a less dependent relationship with Responsys which currently gives the log report.\\
 
-JUnit test cases should be automatically run against the application on its build process, while the SOAP test cases shall be run when the application is deployed onto the server. SOAP test cases should be carefully labelled and grouped in order for quality analysts to share. JUnit test case modifications should be severely managed by version control software. This is because of the fact that a failed JUnit test fails the build process. Unwanted changes on tests can cause many co-workers to fail in building their application locally.\\
+For the fulfilment server, further actions can be performed to reduce wait time after order placement. For example, for a digital product order, the dispatching process will be skipped and the user would be able to directly access the content they bought after credit card authentication. This could help catalysing the fulfilment process and moving the queue faster.\\
+
+For the batch promo creation tool, it is recommended that a backend wide overhaul to take place to support python 3. This is the ultimate weapon that can provide with many elegant asynchronous solutions in the engineering design in the future.\\
+
+
 
 
 \newpage
@@ -222,84 +182,20 @@ JUnit test cases should be automatically run against the application on its buil
 \bibliography{wkrpt}
 \begin{thebibliography}{1}
 
-  \bibitem{telusComp} Telus Health Inc., "Telus Health: Home," Telus Health Inc., {\em http://www.telushealth.com/} (current April 11 2014).
+  \bibitem{mintedllc} Minted LLC., "Minted: Home," Minted LLC., {\em http://www.minted.com/} (current April 11 2016).
 
-  \bibitem{soap} W3C Note, "Simple Object Access Protocol (SOAP) 1.1," W3C Note, {\em http://www.w3.org/TR/2000/NOTE-SOAP-20000508/} (current April 11 2014).
+  \bibitem{cron} Unix Geeks, "Newbie: Intro to cron" Unix Geeks, {\em http://www.unixgeeks.org/security/newbie/unix/cron-1.html} (current April 11 2016).
 
-\bibitem{unit} Microsoft Corp., "Unit Testing," MSDN - Microsoft, {\em http://msdn.microsoft.com/en-us/library/aa292197(v=vs.71).aspx} (current April 11 2014).
+\bibitem{unit} Microsoft Corp., ".NET timeout" MSDN - Microsoft, {\em http://msdn.microsoft.com/en-us/library/aa292197(v=vs.71).aspx} (current April 11 2016).
 
-\bibitem{maven} Apache Foundation., "Maven," Apache Foundation, {\em http://maven.apache.org/} (current April 11 2014).
+\bibitem{maven} Apache Foundation., "Apeche SMTP timeout" Apache Foundation, {\em http://maven.apache.org/} (current April 11 2016).
 
 \end{thebibliography}
 \newpage
 
 
 \tocsection{Acknowledgements}
-I would like to thank my manager Kevin Ho and Quality Analyst Anshuman Ghandi, both of whom gave inputs on how functionality testing is done in other projects produced by Telus Health. Especially Anshuman who gave me a thorough introduction in SOAP testing and provide me with testing tools such as SoapUI and smaple test cases.\\
-
-I would also like to thank Anna Chen, a friend of mine who inspired me to write on this topic and encouraged me to finish this report on time.\\
-\newpage
-
-\appendix{A}{Sample WSDL file}
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=18cm,height=18cm,keepaspectratio]{img/wsdl.jpg}
-\caption{Simple.wsdl}
-\label{overflow}
-\end{figure}
-
-\newpage
-
-\appendix{B}{Simple.java}
-
-\begin{lstlisting}
-// Simple.java
-public class Simple {
-	public int add(int a, int b){
-		return a + b;
-	}
-	public int subtract(int a, int b){
-		return a - b;
-	}
-	public int multiply(int a, int b){
-		return a * b;
-	}
-}
-\end{lstlisting}
-
-\newpage
-\appendix{C}{SimpleTest.java}
-
-\begin{lstlisting}
-import static org.junit.Assert.*;
-import org.junit.Test;
-import service.Simple;
-
-public class SimpleTest {
-	@Test
-	public void testAdd() {
-		//Class Simple is being tested
-		Simple tester = new Simple();
-		//check if 1 3 returns 4
-		assertEquals("1 + 3 must be 4", 4, tester.add(1,3));
-	}
-	public void testSub() {
-		//Class Simple is being tested
-		Simple tester = new Simple();
-		//check if 8 4 returns 4
-		assertEquals("8 - 4 must be 4", 4, tester.subtract(8,4));
-	}
-	public void testMul() {
-		//Class Simple is being tested
-		Simple tester = new Simple();
-		//check if 2 5 returns 10
-		assertEquals("2 * 5 must be 10", 10, tester.multiply(2,5));
-	}
-}
-\end{lstlisting}
-
-\newpage
+I would like to thank my mentor Linus Mixson, co-worker James Wu and devops engineer Patrick Gilbert, all of whom provided valuable background knowledge and priceless guidance over the course of my internship.\\
 
 \end{document}
 

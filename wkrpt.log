@@ -1,13 +1,14 @@
-This is LuaTeX, Version beta-0.80.0 (MiKTeX 2.9 64-bit) (rev 5238)  (format=lualatex 2016.5.7)  9 MAY 2016 16:14
- restricted \write18 enabled.
-**wkrpt.tex
-(./wkrpt.tex
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2016.5.9)  9 MAY 2016 23:39
+entering extended mode
+**./wkrpt.tex
+(wkrpt.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9n> and hyphenation patterns for 69 languages loaded.
-("C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+Requested font "cmr12" at 12.0pt
 )
 \c@part=\count79
 \c@section=\count80
@@ -20,17 +21,16 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./wkrpt.sty
-("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.sty"
+) (wkrpt.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
 Package: fontspec 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaTeX
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
 Package: expl3 2016/04/20 v6476 L3 programming layer (loader) 
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/expl3-code.tex"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
 Package: expl3 2016/04/20 v6476 L3 programming layer (code)
 L3 Module: l3bootstrap 2016/02/12 v6412 L3 Bootstrap code
-\ucharcat@table=\catcodetable5
 L3 Module: l3names 2016/03/11 v6433 L3 Namespace for primitives
 L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
 L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
@@ -135,62 +135,27 @@ L3 Module: l3candidates 2016/03/25 v6456 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen133
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/l3kernel/l3pdfmode.def"
-File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count109
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3xdvipdfmx.def"
+File: l3xdvidpfmx.def 2016/03/26 v6465 L3 Experimental driver: xdvipdfmx
 ))
-("C:/Program Files/MiKTeX 2.9/tex/latex/l3packages/xparse/xparse.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
 Package: xparse 2016/04/20 v6476 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count110
-\l__xparse_m_args_int=\count111
-\l__xparse_mandatory_args_int=\count112
-\l__xparse_processor_int=\count113
-\l__xparse_v_nesting_int=\count114
+\l__xparse_current_arg_int=\count109
+\l__xparse_m_args_int=\count110
+\l__xparse_mandatory_args_int=\count111
+\l__xparse_processor_int=\count112
+\l__xparse_v_nesting_int=\count113
 )
-("C:/Program Files/MiKTeX 2.9/tex/luatex/luaotfload/luaotfload.sty"
-Package: luaotfload 2015/12/09 v2.6 OpenType layout system
-Lua module: luaotfload-main 2015/12/09 2.60001 OpenType layout system.
-Lua module: lualibs 2015-12-02 2.3 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2015-12-02 2.3 ConTeXt Lua libraries -- extended co
-llection.(using cache: C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/gen
-eric)
-luaotfload | conf : Root cache directory is C:/Users/Daiwei/AppData/Local/MiKTeX
-/2.9/luatex-cache/generic/names.
-luaotfload | init : Loading fontloader “fontloader-2016-01-22.lua” from kpse
--resolved path “C:/Program Files/MiKTeX 2.9/tex/luatex/luaotfload/fontloader-2
-016-01-22.lua”.
-Lua-only attribute luaotfload@state = 1
-Lua-only attribute luaotfload@cursbase = 2
-Lua-only attribute luaotfload@noligature = 3
-luaotfload | init : Context OpenType loader version “2.82”
-Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is C:/Users/Daiwei/AppData/Local/MiKTeX
-/2.9/luatex-cache/generic/names.
-Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
-font'.
-Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
-_font'.
-Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
-t_unsafe'.
-Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
-'.
-Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
-.
-luaotfload | main : initialization completed in 0.260 seconds)
-Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
-\l_fontspec_script_int=\count115
-\l_fontspec_language_int=\count116
-\l_fontspec_strnum_int=\count117
+\l_fontspec_script_int=\count114
+\l_fontspec_language_int=\count115
+\l_fontspec_strnum_int=\count116
 \l__fontspec_tmpa_dim=\dimen134
 \l__fontspec_tmpb_dim=\dimen135
 \l__fontspec_tmpc_dim=\dimen136
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-patches.sty"
-Package: fontspec-patches 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaT
-eX
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-patches.sty"
+Package: fontspec-patches 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLa
+TeX
 LaTeX Info: Redefining \em on input line 49.
 LaTeX Info: Redefining \emph on input line 57.
 LaTeX Info: Redefining \- on input line 60.
@@ -205,205 +170,211 @@ LaTeX Info: Redefining \- on input line 60.
 . Defining command \liningnums with sig. 'm' on line 159.
 .................................................
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec-luatex.sty"
-Package: fontspec-luatex 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaTe
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+Package: fontspec-xetex 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaTe
 X
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2enc.def"
-File: eu2enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1enc.def"
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
 )
-LaTeX Font Info:    Try loading font information for EU2+lmr on input line 105.
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2lmr.fd"
-File: eu2lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmr.fd"
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-luaotfload | db : Font names database loaded from C:/Users/Daiwei/AppData/Local/
-MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/Da
-iwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-regular.l
-uc)) ("C:/Program Files/MiKTeX 2.9/tex/xelatex/xunicode/xunicode.sty"
-File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
-ther characters in Unicode lower plane
+Requested font "[lmroman10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-regular.otf
+)
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3enc.def"
 File: t3enc.def 2001/12/31 T3 encoding
-(load luc: C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
-tf/lmromanslant10-regular.luc)(load luc: C:/Users/Daiwei/AppData/Local/MiKTeX/2.
-9/luatex-cache/generic/fonts/otf/lmroman10-italic.luc)(load luc: C:/Users/Daiwei
-/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman10-bold.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
+Requested font "[lmromanslant10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmromanslant10-regular
+.otf
+Requested font "[lmroman10-italic]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-italic.otf
+Requested font "[lmroman10-bold]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman10-bold.otf
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
 
-
-("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2lmss.fd"
-File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
-otf/lmsans10-regular.luc))
-\tipaTiiicode=\count118
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmss.fd"
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Requested font "[lmsans10-regular]:mapping=tex-text" at 10.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmsans10-regular.otf
+)
+\tipaTiiicode=\count117
 \tipasavetokens=\toks14
 \tipachecktokens=\toks15
- ("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/graphics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: xetex.def on input line 94.
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/pdftex-def/pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
 
-("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count119
-))
+)))
 \Gin@req@height=\dimen137
 \Gin@req@width=\dimen138
 ))
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 45.
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 42.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \fontspec with sig. 'om' on line 47.
+. Defining command \fontspec with sig. 'om' on line 44.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmainfont with sig. 'om' on line 57.
+. Defining command \setmainfont with sig. 'om' on line 54.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setsansfont with sig. 'om' on line 67.
+. Defining command \setsansfont with sig. 'om' on line 64.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmonofont with sig. 'om' on line 77.
+. Defining command \setmonofont with sig. 'om' on line 74.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathrm with sig. 'om' on line 91.
+. Defining command \setmathrm with sig. 'om' on line 88.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setboldmathrm with sig. 'om' on line 99.
+. Defining command \setboldmathrm with sig. 'om' on line 96.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathsf with sig. 'om' on line 107.
+. Defining command \setmathsf with sig. 'om' on line 104.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \setmathtt with sig. 'om' on line 115.
+. Defining command \setmathtt with sig. 'om' on line 112.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfamily with sig. 'mom' on line 129.
+. Defining command \newfontfamily with sig. 'mom' on line 126.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontface with sig. 'mom' on line 144.
+. Defining command \newfontface with sig. 'mom' on line 141.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \defaultfontfeatures with sig. 't+om' on line 158.
+. Defining command \defaultfontfeatures with sig. 't+om' on line 155.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \addfontfeatures with sig. 'm' on line 214.
+. Defining command \addfontfeatures with sig. 'm' on line 210.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontfeature with sig. 'mm' on line 225.
+. Defining command \newfontfeature with sig. 'mm' on line 221.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newAATfeature with sig. 'mmmm' on line 233.
+. Defining command \newAATfeature with sig. 'mmmm' on line 229.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newopentypefeature with sig. 'mmm' on line 241.
+. Defining command \newopentypefeature with sig. 'mmm' on line 237.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeature with sig. 'mm' on line 262.
+. Defining command \aliasfontfeature with sig. 'mm' on line 258.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 271.
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 267.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontscript with sig. 'mm' on line 276.
+. Defining command \newfontscript with sig. 'mm' on line 272.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newfontlanguage with sig. 'mm' on line 302.
+. Defining command \newfontlanguage with sig. 'mm' on line 298.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareFontsExtensions with sig. 'm' on line 322.
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 318.
 .................................................
-\l__fontspec_tmp_int=\count120
-LaTeX Info: Redefining \itshape on input line 2151.
-LaTeX Info: Redefining \slshape on input line 2156.
-LaTeX Info: Redefining \scshape on input line 2161.
-LaTeX Info: Redefining \upshape on input line 2166.
+\l__fontspec_tmp_int=\count118
+LaTeX Info: Redefining \itshape on input line 2227.
+LaTeX Info: Redefining \slshape on input line 2232.
+LaTeX Info: Redefining \scshape on input line 2237.
+LaTeX Info: Redefining \upshape on input line 2242.
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/fontspec/fontspec.cfg")))
-("C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")))
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 )
-("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count121
-\Gm@cntv=\count122
-\c@Gm@tempcnt=\count123
+\Gm@cnth=\count119
+\Gm@cntv=\count120
+\c@Gm@tempcnt=\count121
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -414,11 +385,11 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks17
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg"))
-("C:/Program Files/MiKTeX 2.9/tex/latex/setspace/setspace.sty"
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/titlesec/titlesec.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box41
 \beforetitleunit=\skip49
@@ -430,7 +401,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen150
 \titlewidthfirst=\dimen151
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/tocloft/tocloft.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
 \cftparskip=\skip51
@@ -459,49 +430,47 @@ Package tocloft Info: The document has section divisions on input line 44.
 \cftbeforefigskip=\skip74
 \cftfigindent=\skip75
 \cftfignumwidth=\skip76
-\c@lofdepth=\count124
-\c@lotdepth=\count125
+\c@lofdepth=\count122
+\c@lotdepth=\count123
 \cftbeforelottitleskip=\skip77
 \cftafterlottitleskip=\skip78
 \cftbeforetabskip=\skip79
 \cfttabindent=\skip80
 \cfttabnumwidth=\skip81
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/url/url.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/tools/indentfirst.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 \g__file_internal_ior=\read1
-luaotfload | cache : Lookup cache loaded from C:/Users/Daiwei/AppData/Local/MiKT
-eX/2.9/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
-luaotfload | load : Lookup/name: "Times New Roman" -> "times.ttf"(load luc: C:/U
-sers/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/times.luc)
-luaotfload | load : Lookup/name: "Times New Roman" -> "times.ttf"
-\g__fontspec_family_TimesNewRoman_int=\count126
-luaotfload | load : Lookup/name: "Times New Roman" -> "times.ttf"
-luaotfload | load : Lookup/name: "Times New Roman" -> "timesbi.ttf"(load luc: C:
-/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/timesbi.lu
-c)
-luaotfload | load : Lookup/name: "Times New Roman" -> "times.ttf"
-luaotfload | load : Lookup/name: "Times New Roman" -> "timesbd.ttf"(load luc: C:
-/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/timesbd.lu
-c)
-luaotfload | load : Lookup/name: "Times New Roman" -> "times.ttf"
-luaotfload | load : Lookup/name: "Times New Roman" -> "timesi.ttf"(load luc: C:/
-Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/timesi.luc)
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"(load luc: C:/Use
-rs/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otf/lmroman12-regu
-lar.luc)
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesi.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesi.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbi.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbi.ttf"
+Requested font "Times New Roman" at 10.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "Times New Roman/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
+\g__fontspec_family_TimesNewRoman_int=\count124
+Requested font "Times New Roman/BI/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbi.ttf
+Requested font "Times New Roman/B/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+Requested font "Times New Roman/I/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesi.ttf
+Requested font "[lmroman12-regular]:mapping=tex-text" at 12.0pt
+ -> C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-regular.otf
+Requested font "Times New Roman/B/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+Requested font "Times New Roman/B/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+Requested font "Times New Roman/I/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesi.ttf
+Requested font "Times New Roman/I/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesi.ttf
+Requested font "Times New Roman/BI/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbi.ttf
+Requested font "Times New Roman/BI/OT" at 10.0pt
+ -> C:/WINDOWS/Fonts/timesbi.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -511,99 +480,88 @@ luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbi.ttf"
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. 
-. <->"TimesNewRoman:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+trep;
-"
+. <->"Times New
+. Roman/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
 . 
 . * 'small caps' with NFSS spec.:
-. 
-. <->"TimesNewRoman:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+trep;
-+smcp;"
+. <->"Times New
+. Roman/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+smcp;"
 . and font adjustment code:
 . 
 . 
 . * 'bold' with NFSS spec.:
-. 
-. <->"TimesNewRoman/B:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tre
-p;"
+. <->"Times New
+. Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
 . 
 . * 'bold small caps' with NFSS spec.:
-. 
-. <->"TimesNewRoman/B:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tre
-p;+smcp;"
+. <->"Times New
+. Roman/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+smcp;
+"
 . and font adjustment code:
 . 
 . 
 . * 'italic' with NFSS spec.:
-. 
-. <->"TimesNewRoman/I:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tre
-p;"
+. <->"Times New
+. Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
 . 
 . * 'small caps' with NFSS spec.:
-. 
-. <->"TimesNewRoman/I:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tre
-p;+smcp;"
+. <->"Times New
+. Roman/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+smcp;
+"
 . and font adjustment code:
 . 
 . 
 . * 'bold italic' with NFSS spec.:
-. 
-. <->"TimesNewRoman/BI:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tr
-ep;"
+. <->"Times New
+. Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;"
 . 
 . * 'bold small caps' with NFSS spec.:
-. 
-. <->"TimesNewRoman/BI:mode=node;script=latn;language=DFLT;+tlig;+trep;+tlig;+tr
-ep;+smcp;"
+. <->"Times New
+. Roman/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+smcp
+;"
 . and font adjustment code:
 . 
 .................................................
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-("C:/Program Files/MiKTeX 2.9/tex/latex/listings/listings.sty"
-\lst@mode=\count127
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 10.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count125
 \lst@gtempboxa=\box42
 \lst@token=\toks19
-\lst@length=\count128
+\lst@length=\count126
 \lst@currlwidth=\dimen152
-\lst@column=\count129
-\lst@pos=\count130
+\lst@column=\count127
+\lst@pos=\count128
 \lst@lostspace=\dimen153
 \lst@width=\dimen154
-\lst@newlines=\count131
-\lst@lineno=\count132
+\lst@newlines=\count129
+\lst@lineno=\count130
 \lst@maxwidth=\dimen155
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstmisc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count133
-\lst@skipnumbers=\count134
+\c@lstnumber=\count131
+\lst@skipnumbers=\count132
 \lst@framebox=\box43
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/listings/listings.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/color.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-("C:/Program Files/MiKTeX 2.9/tex/latex/00miktex/color.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: xetex.def on input line 142.
 )
-("C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)) (./wkrpt.aux
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
-
-LaTeX Warning: Label `overflow' multiply defined.
-
+)) (wkrpt.aux
 
 LaTeX Warning: Label `overflow' multiply defined.
 
@@ -617,7 +575,7 @@ LaTeX Warning: Label `overflow' multiply defined.
 LaTeX Warning: Label `overflow' multiply defined.
 
 )
-\openout1 = wkrpt.aux
+\openout1 = `wkrpt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -631,29 +589,17 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 3.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
- ("C:/Program Files/MiKTeX 2.9/tex/latex/tipa/t3cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\tipa\t3cmr.fd"
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-("C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen156
-\scratchbox=\box44
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen157
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks21
-)
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -686,41 +632,40 @@ LaTeX Font Info:    Redeclaring math symbol \Psi on input line 3.
 LaTeX Font Info:    Redeclaring math symbol \Omega on input line 3.
 LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 3.
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 3.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
 (Font)              `operators' in the math version `normal' on input line 3.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU2/TimesNewRoman(0)/m/n on input line 3
-.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
+(Font)                  OT1/cmr/m/n --> EU1/TimesNewRoman(0)/m/n on input line 
+3.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
 (Font)              `operators' in the math version `bold' on input line 3.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU2/TimesNewRoman(0)/m/n on input line 
-3.
+(Font)                  OT1/cmr/bx/n --> EU1/TimesNewRoman(0)/m/n on input line
+ 3.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU2/TimesNewRoman(0)/m/n --> EU2/TimesNewRoman(0)/m/n on
- input line 3.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU2/TimesNewRoman(0)/m/it on input line
- 3.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU2/TimesNewRoman(0)/bx/n on input line
- 3.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU2/lmss/m/n on input line 3.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU2/lmtt/m/n on input line 3.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU2/TimesNewRoman(0)/m/n --> EU2/TimesNewRoman(0)/bx/n o
+(Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/m/n o
 n input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/TimesNewRoman(0)/m/it on input lin
+e 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/TimesNewRoman(0)/bx/n on input lin
+e 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/TimesNewRoman(0)/m/n --> EU1/TimesNewRoman(0)/bx/n 
+on input line 3.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU2/TimesNewRoman(0)/bx/it on input li
-ne 3.
+(Font)                  OT1/cmr/bx/it --> EU1/TimesNewRoman(0)/bx/it on input l
+ine 3.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU2/lmss/bx/n on input line 3.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 3.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU2/lmtt/bx/n on input line 3.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 3.
 
-*geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
@@ -754,31 +699,37 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count141
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf" [1
+\c@lstlisting=\count133
+Requested font "Times New Roman/B/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 14.4pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;+smcp;" at 14.4pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "Times New Roman/B/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 14.4pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+[1
 
-{C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
  []
 
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesi.ttf"
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
-
- []
-
+Requested font "Times New Roman/I/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 12.0pt
+ -> C:/WINDOWS/Fonts/timesi.ttf
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 
  []
 
 
-Overfull \hbox (7.25261pt too wide) in paragraph at lines 43--43
-[][]\EU2/TimesNewRoman(0)/m/n/12 The fol-low-ing re-port per-forms an anal-y-si
-s on the use of syn-chronous and asyn-chronous techique
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+
  []
 
 
@@ -797,242 +748,219 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--43
  []
 
 [2]
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf" [3]
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf" (./wkrpt.toc
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
+Requested font "Times New Roman/B/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 16.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[3]
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 17.28pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "Times New Roman/B/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 17.28pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+ (wkrpt.toc
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 8.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "Times New Roman/OT:script=latn;language=DFLT;mapping=tex-text;m
+apping=tex-text;" at 6.0pt
+ -> C:/WINDOWS/Fonts/times.ttf
+Requested font "cmmi12" at 12.0pt
+Requested font "cmmi8" at 8.0pt
+Requested font "cmmi6" at 6.0pt
+Requested font "cmsy10" at 12.0pt
+Requested font "cmsy8" at 8.0pt
+Requested font "cmsy6" at 6.0pt
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 1.
+Requested font "cmr8" at 8.0pt
+Requested font "cmr6" at 6.0pt
 )
 \tf@toc=\write3
+\openout3 = `wkrpt.toc'.
 
-\openout3 = wkrpt.toc
- [4] (./wkrpt.lof)
+ [4] (wkrpt.lof)
 \tf@lof=\write4
+\openout4 = `wkrpt.lof'.
 
-\openout4 = wkrpt.lof
- [5] (./wkrpt.lot)
-\tf@lot=\write5
-
-\openout5 = wkrpt.lot
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
+ [5]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<img/agile.png, id=23, 120.45pt x 106.2369pt>
-File: img/agile.png Graphic file (type png)
- <use img/agile.png>
-Package pdftex.def Info: img/agile.png used on input line 70.
-(pdftex.def)             Requested size: 355.6938pt x 313.7219pt.
-
+File: img/async.jpg Graphic file (type QTm)
+<use  "img/async.jpg" >
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[1
-Missing character: There is no ， (U+FF0C) in font "TimesNewRoman:mode=node;scr
-ipt=latn;language=DFLT;+tlig;+trep;+tlig;+trep;"!
-] [2<./img/agile.png>]
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "timesbd.ttf" <img/three_ti
-er.jpg, id=31, 455.7025pt x 341.275pt>
-File: img/three_tier.jpg Graphic file (type jpg)
-
-<use img/three_tier.jpg>
-Package pdftex.def Info: img/three_tier.jpg used on input line 86.
-(pdftex.def)             Requested size: 341.44226pt x 255.70566pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-<img/ui.jpg, id=32, 146.04562pt x 94.85437pt>
-File: img/ui.jpg Graphic file (type jpg)
- <use img/ui.jpg>
-Package pdftex.def Info: img/ui.jpg used on input line 99.
-(pdftex.def)             Requested size: 142.27689pt x 92.40663pt.
- [3<./img/three_tier.jpg>] <img/soapui.jpg, id=36, 510.40688pt x 261.22594pt>
-File: img/soapui.jpg Graphic file (type jpg)
-
-<use img/soapui.jpg>
-Package pdftex.def Info: img/soapui.jpg used on input line 109.
-(pdftex.def)             Requested size: 426.81517pt x 218.44374pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+[2]
+Requested font "Times New Roman/B/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;" at 14.0pt
+ -> C:/WINDOWS/Fonts/timesbd.ttf
+File: img/funnel.png Graphic file (type QTm)
+ <use  "img/funnel.png" > [3]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-luaotfload | load : Lookup/name: "TimesNewRoman" -> "times.ttf"
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 116.
-
-("C:/Program Files/MiKTeX 2.9/tex/latex/euenc/eu2lmtt.fd"
-File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: C:/Users/Daiwei/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
-otf/lmmono10-regular.luc) [4<./img/ui.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+File: img/email-marketing.jpg Graphic file (type QTm)
+<use  "img/email-marketing.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
-[5<./img/soapui.jpg>] [6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+File: img/responsys.jpg Graphic file (type QTm)
+<use  "img/responsys.jpg" >
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+[8]
+File: img/order.png Graphic file (type QTm)
+ <use  "img/order.png" >
 Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
-<img/timeTable.jpg, id=48, 216.05719pt x 229.60782pt>
-File: img/timeTable.jpg Graphic file (type jpg)
- <use img/timeTable.jpg>
-Package pdftex.def Info: img/timeTable.jpg used on input line 157.
-(pdftex.def)             Requested size: 160.64795pt x 170.72343pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-<img/timeGraph.jpg, id=49, 227.34938pt x 154.32657pt>
-File: img/timeGraph.jpg Graphic file (type jpg)
- <use img/timeGraph.jpg>
-Package pdftex.def Info: img/timeGraph.jpg used on input line 167.
-(pdftex.def)             Requested size: 256.07962pt x 173.82887pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
-
- []
-
-[8<./img/timeTable.jpg><./img/timeGraph.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-<img/soapAuto.jpg, id=56, 444.15938pt x 344.78813pt>
-File: img/soapAuto.jpg Graphic file (type jpg)
- <use img/soapAuto.jpg>
-Package pdftex.def Info: img/soapAuto.jpg used on input line 184.
-(pdftex.def)             Requested size: 341.43446pt x 265.04575pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-
- []
-
-[9<./img/soapAuto.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+[13] (wkrpt.bbl)
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[]\EU1/TimesNewRoman(0)/m/n/12 Unix Geeks, ”Newbie: Intro to cron” Unix Geeks,
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 189--190
+[]\EU1/TimesNewRoman(0)/m/n/12 Microsoft Corp., ”.NET timeout” MSDN - Microsoft
+, \EU1/TimesNewRoman(0)/m/it/12 http://msdn.microsoft.com/en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+[]\EU1/TimesNewRoman(0)/m/n/12 Apache Foundation., ”Apeche SMTP timeout” Apache
+ Foundation,
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-[15]
-No file wkrpt.bbl.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-[][]\EU2/TimesNewRoman(0)/m/n/12 W3C Note, ”Sim-ple Ob-ject Ac-cess Pro-to-co
-l (SOAP) 1.1,” W3C Note,
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 245--246
-[][]\EU2/TimesNewRoman(0)/m/n/12 Mi-crosoft Corp., ”Unit Test-ing,” MSDN - 
-Mi-crosoft, \EU2/TimesNewRoman(0)/m/it/12 http://msdn.mi-crosoft.com/en-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-[17] <img/wsdl.jpg, id=85, 754.31813pt x 712.91344pt>
-File: img/wsdl.jpg Graphic file (type jpg)
- <use img/wsdl.jpg>
-Package pdftex.def Info: img/wsdl.jpg used on input line 263.
-(pdftex.def)             Requested size: 512.14688pt x 484.035pt.
-
-Overfull \hbox (56.84676pt too wide) in paragraph at lines 263--264
- [][][] 
- []
-
-[1<./img/wsdl.jpg>] [1] [1] (./wkrpt.aux)
+[15] (wkrpt.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-)
+ ) 
+Here is how much of TeX's memory you used:
+ 16786 strings out of 428721
+ 331954 string characters out of 3164047
+ 380437 words of memory out of 3000000
+ 20045 multiletter control sequences out of 15000+200000
+ 6568 words of font info for 47 fonts, out of 3000000 for 9000
+ 1096 hyphenation exceptions out of 8191
+ 55i,7n,63p,10410b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Here is how much of LuaTeX's memory you used:
- 17664 strings out of 494933
- 100000,460012 words of node,token memory allocated
- 444 words of node memory still in use:
-    nodes
-   avail lists: 2:1527,3:109,4:997,5:909,6:2588,7:523,8:2,9:1663,10:205
- 20907 multiletter control sequences out of 65536+200000
- 49 fonts using 13086095 bytes
- 55i,8n,64p,1440b,600s stack positions out of 5000i,500n,10000p,200000b,50000s
-<c:/program files/miktex 2.9/fonts/opentype/public/lm/lmmono10-regular.otf><C:/W
-INDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.ttf><C:/WINDOWS/Fonts/timesbd.tt
-f>
-Output written on wkrpt.pdf (26 pages, 1609644 bytes).
-
-PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Output written on wkrpt.pdf (20 pages).

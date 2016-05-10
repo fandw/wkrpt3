@@ -2,20 +2,17 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Problem Specification}{3}
 \contentsline {subsection}{\numberline {2.1}Background}{3}
-\contentsline {subsection}{\numberline {2.2}Options}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}Manual testing from User Interface}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}Simple Object Accessing Protocol (SOAP)}{4}
-\contentsline {subsubsection}{\numberline {2.2.3}Unit Testing}{5}
-\contentsline {section}{\numberline {3}Comparison}{7}
-\contentsline {subsection}{\numberline {3.1}Time}{7}
-\contentsline {subsection}{\numberline {3.2}Automation}{8}
-\contentsline {subsection}{\numberline {3.3}Reproduction}{10}
-\contentsline {subsection}{\numberline {3.4}Productivity}{11}
-\contentsline {section}{\numberline {4}Evaluation}{13}
-\contentsline {section}{\numberline {5}Conclusions}{14}
-\contentsline {section}{\numberline {6}Recommendations}{15}
-\contentsline {section}{References}{16}
-\contentsline {section}{Acknowledgements}{17}
-\contentsline {section}{Sample WSDL file}{A-A.1}
-\contentsline {section}{Simple.java}{A-B.1}
-\contentsline {section}{SimpleTest.java}{A-C.1}
+\contentsline {subsection}{\numberline {2.2}Options}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Email campaign}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Order placement and processing}{4}
+\contentsline {subsubsection}{\numberline {2.2.3}Batch promo code generation tool}{5}
+\contentsline {section}{\numberline {3}Analysis}{6}
+\contentsline {subsection}{\numberline {3.1}Email Campaign}{6}
+\contentsline {subsubsection}{\numberline {3.1.1}Email Generator}{6}
+\contentsline {subsubsection}{\numberline {3.1.2}Email Server}{7}
+\contentsline {subsection}{\numberline {3.2}Order Placement}{8}
+\contentsline {subsection}{\numberline {3.3}Promo Code Generator}{10}
+\contentsline {section}{\numberline {4}Conclusions}{12}
+\contentsline {section}{\numberline {5}Recommendations}{13}
+\contentsline {section}{References}{14}
+\contentsline {section}{Acknowledgements}{15}
